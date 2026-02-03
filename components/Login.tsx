@@ -51,10 +51,10 @@ export const Login: React.FC = () => {
 
       <div className="w-full max-w-2xl flex flex-col items-center text-center">
         {/* Header / Logo */}
-        <div className="mb-8 text-2xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium animate-slide-up">
-          Alpacka.ai 
+        <div className="mb-8 text-1xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium animate-slide-up">
+          ALPACKA.AI
         </div>
-        
+
         {/* Mascot Image */}
         <div className="mb-8 relative animate-slide-up delay-100">
           <img
@@ -63,16 +63,16 @@ export const Login: React.FC = () => {
             className="w-48 h-48 object-cover rounded-2xl mix-blend-multiply opacity-90 grayscale-[0.1]"
           />
         </div>
-        
+
         {/* Beta Tag */}
         <div className="mb-6 animate-slide-up delay-200">
           <span className="bg-[#F0F0F0] text-[#656565] border border-[#E5E5E5] text-xs px-3 py-1 rounded-full uppercase tracking-wider font-['Inter',sans-serif] font-medium">
-            Beta Preview
+            Beta
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-5xl text-[#242424] mb-6 leading-tight font-['Source_Serif_4',serif] font-medium tracking-tight animate-slide-up delay-300">
+        <h1 className="text-3xl md:text-5xl text-[#242424] mb-6 leading-tight font-['Source_Serif_4',serif] font-medium tracking-tight animate-slide-up delay-300">
           Genera tus indicaciones
           <br />
           de IA con un solo click.
@@ -123,13 +123,13 @@ export const Login: React.FC = () => {
               )}
             </button>
           </div>
-          
+
           {error && (
             <p className="mt-4 text-[#DA7756] text-sm bg-[#FFF4F0] p-3 rounded-lg border border-[#F0E0DA] font-['Inter',sans-serif]">
               {error}
             </p>
           )}
-          
+
           <p className="mt-6 text-[#9CA3AF] text-sm font-['Inter',sans-serif]">
             Inicia sesión para acceder al optimizador profesional.
           </p>
