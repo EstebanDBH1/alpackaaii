@@ -53,9 +53,9 @@ function App() {
       <main className="flex-1">
         <PromptOptimizer2 />
       </main>
-      <footer className="border-t border-gray-100 py-6 mt-auto bg-white/50 backdrop-blur-sm">
+      <footer className="border-t border-gray-100 py-6 mt-auto ">
         <div className="max-w-7xl mx-auto px-4 text-center text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Alpacka.ai 
+          &copy; {new Date().getFullYear()} Alpacka.ai
         </div>
       </footer>
     </div>
