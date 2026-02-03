@@ -17,7 +17,7 @@ export const optimizePromptWithGemini = async (request: PromptRequest): Promise<
   }
 
   const ai = new GoogleGenAI({ apiKey });
-  const modelId = 'gemini-3-flash-preview';
+  const modelId = 'gemini-2.5-flash-lite';
 
   const systemInstruction = `
     Eres 'PromptMaster', un experto Ingeniero de Prompts de nivel mundial que habla ESPAÑOL nativo.
