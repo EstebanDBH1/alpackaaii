@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { auth, logout } from './services/firebase';
-import { onAuthStateChanged, User } from 'firebase/auth';
-import { Login } from './components/Login';
-import { Navbar } from './components/Navbar';
-import { PromptOptimizer } from './components/PromptOptimizer';
-import { UserProfile } from './types';
-import { PromptOptimizer2 } from './components/PromptOpimizer2';
-
+import React, { useEffect, useState } from "react";
+import { auth, logout } from "./services/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
+import { Login } from "./components/Login";
+import { Navbar } from "./components/Navbar";
+import { PromptOptimizer } from "./components/PromptOptimizer";
+import { UserProfile } from "./types";
+import { PromptOptimizer2 } from "./components/PromptOpimizer2";
 
 function App() {
   const [user, setUser] = useState<UserProfile | null>(null);
@@ -20,7 +19,7 @@ function App() {
           uid: currentUser.uid,
           displayName: currentUser.displayName,
           email: currentUser.email,
-          photoURL: currentUser.photoURL
+          photoURL: currentUser.photoURL,
         });
       } else {
         setUser(null);
@@ -52,7 +51,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar user={user} onLogout={handleLogout} />
       <main className="flex-1">
-        <PromptOptimizer2/>
+        <PromptOptimizer2 />
       </main>
       <footer className="border-t border-gray-100 py-6 mt-auto bg-white/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 text-center text-gray-400 text-sm">
