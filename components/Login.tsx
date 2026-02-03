@@ -52,7 +52,7 @@ export const Login: React.FC = () => {
       <div className="w-full max-w-2xl flex flex-col items-center text-center">
         {/* Header / Logo */}
         <div className="mb-8 text-2xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium animate-slide-up">
-          Alpacka.ai xd
+          Alpacka.ai 
         </div>
         
         {/* Mascot Image */}
