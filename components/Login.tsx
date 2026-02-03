@@ -29,18 +29,34 @@ export const Login: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden bg-[#FCFAF7] text-[#383838]">
+      {/* Animation Styles */}
+      <style>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(12px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up {
+          opacity: 0;
+          animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+      `}</style>
+
       {/* Background decoration elements - Warm & Subtle */}
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#E7E5E4] rounded-full blur-3xl opacity-40 -z-10"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#D6D3D1] rounded-full blur-3xl opacity-30 -z-10"></div>
 
-      <div className="w-full max-w-2xl flex flex-col items-center text-center animate-fadeIn">
+      <div className="w-full max-w-2xl flex flex-col items-center text-center">
         {/* Header / Logo */}
-        <div className="mb-8 text-2xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium">
+        <div className="mb-8 text-2xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium animate-slide-up">
           Alpacka.ai
         </div>
         
         {/* Mascot Image */}
-        <div className="mb-8 relative">
+        <div className="mb-8 relative animate-slide-up delay-100">
           <img
             src={ImageLogin}
             alt="Alpacka Mascot"
@@ -49,21 +65,21 @@ export const Login: React.FC = () => {
         </div>
         
         {/* Beta Tag */}
-        <div className="mb-6">
+        <div className="mb-6 animate-slide-up delay-200">
           <span className="bg-[#F0F0F0] text-[#656565] border border-[#E5E5E5] text-xs px-3 py-1 rounded-full uppercase tracking-wider font-['Inter',sans-serif] font-medium">
             Beta Preview
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-5xl text-[#242424] mb-6 leading-tight font-['Source_Serif_4',serif] font-medium tracking-tight">
+        <h1 className="text-4xl md:text-5xl text-[#242424] mb-6 leading-tight font-['Source_Serif_4',serif] font-medium tracking-tight animate-slide-up delay-300">
           Genera tus indicaciones
           <br />
           de IA con un solo click.
         </h1>
 
         {/* Login Area (Styled as the Input Field from Claude) */}
-        <div className="w-full max-w-[480px] mt-8">
+        <div className="w-full max-w-[480px] mt-8 animate-slide-up delay-400">
           <div className="bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-[#E5E5E5] p-2 pl-6 flex items-center justify-between transition-all hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:border-[#D4D4D4] group">
             <span className="text-[#A8A8A8] text-lg truncate mr-4 font-['Source_Serif_4',serif] italic">
               Comienza tu idea aquí...
