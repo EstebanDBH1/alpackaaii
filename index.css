@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #fcfaf7; /* Warm Claude-like background */
-}
+
 /* Custom scrollbar for light theme */
 ::-webkit-scrollbar {
   width: 8px;

@@ -4,7 +4,7 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/
 // Configuración de Firebase proporcionada por el usuario
 const firebaseConfig = {
   apiKey: "AIzaSyCFTAtBG8NLRhs-p-1wtzGlGkvi5EYziLI",
-  authDomain: "alpackaai-39613197-391a8.firebaseapp.com",
+  authDomain: "alpackaai.xyz",
   projectId: "alpackaai-39613197-391a8",
   storageBucket: "alpackaai-39613197-391a8.firebasestorage.app",
   messagingSenderId: "32310275350",
