@@ -51,8 +51,8 @@ export const Login: React.FC = () => {
 
       <div className="w-full max-w-2xl flex flex-col items-center text-center">
         {/* Header / Logo */}
-        <div className="mb-8 text-1xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium animate-slide-up">
-          ALPACKA.AI
+        <div className="mb-8 text-3xl font-['Source_Serif_4',serif] text-[#242424] tracking-tight font-medium animate-slide-up">
+          Alpacka.ai
         </div>
 
         {/* Mascot Image */}
@@ -72,7 +72,7 @@ export const Login: React.FC = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-3xl md:text-5xl text-[#242424] mb-6 leading-tight font-['Source_Serif_4',serif] font-medium tracking-tight animate-slide-up delay-300">
+        <h1 className="text-4xl md:text-5xl text-[#242424] mb-6 leading-tight font-['Source_Serif_4',serif] font-medium tracking-tight animate-slide-up delay-300">
           Genera tus indicaciones
           <br />
           de IA con un solo click.
